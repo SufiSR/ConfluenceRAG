@@ -44,7 +44,24 @@ This project implements a Retrieval-Augmented Generation (RAG) system that integ
 
 4. **Configure Environment Variables: Create a .env file in the project root and add the required environment variables:**
     ```bash
-    RAG_LIBRE_KEY=your_api_key_here
+    # Default profile (internal-confluence)
+    CONFLUENCE_URL=
+    CONFLUENCE_USERNAME=
+    CONFLUENCE_API_TOKEN=
+    CONFLUENCE_SPACES=
+    CHROMA_PERSIST_DIRECTORY=./vectordb/chroma_db_internal
+    OPENAI_API_KEY=
+    OPENAI_MODEL=
+    
+    # Online help profile
+    CONFLUENCE_URL_online-help=
+    CONFLUENCE_USERNAME_online-help=
+    CONFLUENCE_API_TOKEN_online-help=
+    CONFLUENCE_SPACES_online-help=
+    CHROMA_PERSIST_DIRECTORY_online-help=./vectordb/chroma_db_online_help
+    # Can use the same OpenAI key or specify a different one
+
+    RAG_LIBRE_KEY=
     # Other variables, e.g., Confluence credentials, as needed
 
 # Usage

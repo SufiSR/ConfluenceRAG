@@ -1,0 +1,9 @@
+endpoints:
+  custom:
+    - name: "RAGBot"
+      apiKey: "${RAG_LIBRE_KEY}"
+      baseURL: "http://my_python_server:5001/api/v1"
+      models:
+        default: ["online-help", "internal-confluence"]
+        fetch: false
+      titleConvo: true
